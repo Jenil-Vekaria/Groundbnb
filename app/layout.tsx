@@ -5,6 +5,7 @@ import { Nunito } from "next/font/google";
 import ToastProvider from "./providers/ToasterProvider";
 import LoginModal from "./components/modals/LoginModal";
 import getCurrentUser from "./actions/getCurrentUser";
+import RentModal from "./components/modals/RentModal";
 
 export const metadata = {
 	title: "Groundbnb",
@@ -28,6 +29,7 @@ export default async function RootLayout({
 				<ToastProvider />
 				<RegisterModal />
 				<LoginModal />
+				<RentModal />
 				<Navbar currentUser={currentUser} />
 				{children}
 			</body>

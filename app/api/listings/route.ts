@@ -22,6 +22,7 @@ export async function POST(req: NextRequest) {
 		description,
 	} = body;
 
+	//Validating if any field is empty
 	Object.keys(body).forEach((value: any) => {
 		if (!body[value]) {
 			return NextResponse.error();

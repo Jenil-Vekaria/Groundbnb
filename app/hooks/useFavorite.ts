@@ -20,7 +20,7 @@ const useFavorite = ({ listingId, currentUser }: IUseFavorite) => {
 		return list.includes(listingId);
 	}, [currentUser, listingId]);
 
-	const toggelFavorite = useCallback(
+	const toggleFavorite = useCallback(
 		async (e: React.MouseEvent<HTMLDivElement>) => {
 			e.stopPropagation();
 
@@ -47,7 +47,7 @@ const useFavorite = ({ listingId, currentUser }: IUseFavorite) => {
 		[hasFavorited, currentUser, listingId, loginModal, router],
 	);
 
-	return { hasFavorited, toggelFavorite };
+	return { hasFavorited, toggleFavorite };
 };
 
 export default useFavorite;

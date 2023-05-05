@@ -53,8 +53,10 @@ const CategoryBox: React.FC<CategoryBoxProps> = ({
             ${selected ? "border-b-neutral-800" : "border-transparent"}
             ${selected ? "text-neutral-800" : "text-neutral-500"}`}
 		>
-			<Icon size={26} />
-			<div className="font-medium text-sm">{label}</div>
+			<Icon size={24} />
+			<div className={`${selected ? "font-bold" : "font-semibold"} text-sm`}>
+				{label}
+			</div>
 		</div>
 	);
 };

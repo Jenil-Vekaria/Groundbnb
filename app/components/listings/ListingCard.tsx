@@ -8,6 +8,7 @@ import { format } from "date-fns";
 import Image from "next/image";
 import HeartButton from "../HeartButton";
 import Button from "../Button";
+import Avatar from "../Avatar";
 
 interface ListingCardProps {
 	data: SafeListing;
@@ -79,18 +80,24 @@ const ListingCard: React.FC<ListingCardProps> = ({
 						src={data.imageSrc}
 						className="object-cover h-full w-full group-hover:scale-110 transition"
 					/>
-					<div className="absoltue top-3 right-3">
+					<div className="absolute top-2 right-2">
 						<HeartButton listingId={data.id} currentUser={currentUser} />
 					</div>
+
+					<div className="absolute bottom-2 left-2">
+						<Avatar src={data.user?.image} />
+					</div>
 				</div>
-				<div className="font-semibold text-lg">
+
+				<div className="font-semibold text-md">
 					{location?.region}, {location?.label}
+					<div className="font-light text-neutral-500 text-sm">
+						{reservationDate || data.category}
+					</div>
 				</div>
-				<div className="font-light text-neutral-500 text-sm">
-					{reservationDate || data.category}
-				</div>
+
 				<div className="flex flex-row items-center gap-1">
-					<div className="font-semibold">$ {price}</div>
+					<div className="font-semibold">${price} CAD</div>
 					{!reservation && <div className="font-light">night</div>}
 				</div>
 				{onAction && actionLabel && (

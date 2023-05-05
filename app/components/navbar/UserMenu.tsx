@@ -35,6 +35,10 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
 		rentModal.onOpen();
 	}, [currentUser, loginModal, rentModal]);
 
+	const navigateTo = (path: string) => {
+		router.push(path);
+		toggleOpen();
+	};
 	return (
 		<div className="relative">
 			<div className="flex flex-row items-center gap-3">
@@ -61,19 +65,19 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
 						{currentUser ? (
 							<>
 								<MenuItem
-									onClick={() => router.push("/trips")}
+									onClick={() => navigateTo("/trips")}
 									label="My trips"
 								/>
 								<MenuItem
-									onClick={() => router.push("/favorites")}
+									onClick={() => navigateTo("/favorites")}
 									label="My favourites"
 								/>
 								<MenuItem
-									onClick={() => router.push("/reservations")}
+									onClick={() => navigateTo("/reservations")}
 									label="My reservations"
 								/>
 								<MenuItem
-									onClick={() => router.push("/properties")}
+									onClick={() => navigateTo("/properties")}
 									label="My properties"
 								/>
 								<MenuItem

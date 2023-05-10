@@ -1,18 +1,26 @@
-<!-- INTRO SECTION -->
-<br />
+<!-- PROJECT LOGO -->
 <p align="center">
-  <a href="https://github.com/Jenil-Vekaria/groundbnb">
-    <img src="public/images/logo.png" alt="logo" width="50%"/>
+  <a href="https://groundbnb-demo.vercel.app">
+       <img src="public/images/logo.png" alt="logo" width="50%"/>
   </a>
 
   <h3 align="center">Groundbnb</h3>
 
   <p align="center">
-   Groundbnb is an airbnb clone built using Next.js and TypeScript
+    🗻 Groundbnb is an airbnb clone built using Next.js and TypeScript ✈
     <br />
     <br />
+    <a href="https://groundbnb-demo.vercel.app">Live Demo</a>
   </p>
 </p>
+
+
+<!-- ABOUT THE PROJECT -->
+## 📷 Screenshots
+
+  <a href="https://groundbnb-demo.vercel.app">
+    <img src="screenshots/ScreenshotsGif.gif" alt="Logo">
+  </a>
 
 <!-- FEATURE SECTION -->
 
@@ -72,9 +80,6 @@ npm run dev
 #### You are all setup!
 
 ### Give a ⭐, if you liked the project
-
-## 📸 Screenshots
-
 
 ## Author
 

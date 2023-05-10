@@ -28,9 +28,12 @@
 
 - Listing creation
 - Reservation creation
-- Advanced filtering (location + category + facilities)
-- Favorite listing
+- Advanced filtering (location map + calendar + amenities)
+- Advanced pricing calculation
+- Favorite properties
 - Image uploading
+- Email, Github, and Google authentication
+- Lighting fast loading (Next.js 13 Server Componenents)
 
 <!-- TECHNOLOGY SECTION -->
 

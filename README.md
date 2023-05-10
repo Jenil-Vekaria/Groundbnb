@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- INTRO SECTION -->
+<br />
+<p align="center">
+  <a href="https://github.com/Jenil-Vekaria/groundbnb">
+    <img src="public/images/logo.png" alt="logo" width="50%"/>
+  </a>
 
-## Getting Started
+  <h3 align="center">Groundbnb</h3>
 
-First, run the development server:
+  <p align="center">
+   Groundbnb is an airbnb clone built using Next.js and TypeScript
+    <br />
+    <br />
+  </p>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+<!-- FEATURE SECTION -->
+
+## ✨ Features
+
+- Listing creation
+- Reservation creation
+- Advanced filtering (location + category + facilities)
+- Favorite listing
+- Image uploading
+
+<!-- TECHNOLOGY SECTION -->
+
+## 🛠️Technologies
+
+| <p align="center"><img src="https://www.rlogical.com/wp-content/uploads/2021/08/Rlogical-Blog-Images-thumbnail-1.png" width="100" height="100" /><br/>NextJs</p> | <p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png" width="100" height="100" /><br/>TypeScript</p> | <p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png" width="100" height="100" /><br/>Tailwind CSS</p> | <p align="center"><img src="https://www.pngall.com/wp-content/uploads/13/Mongodb-Transparent.png" width="100" height="100" /><br/>MongoDB</p> |
+|---|----------------------------|----------|-----------|
+| <p align="center"><img src="https://next-auth.js.org/img/logo/logo-sm.png" width="100" height="100" /><br/>Next Auth</p> | <p align="center"><img src="https://avatars.githubusercontent.com/u/17219288?s=200&v=4" width="100" height="100" /><br/>Prisma ORM</p> | <p align="center"><img src="https://cloudinary-res.cloudinary.com/image/upload/website/cloudinary_web_favicon.png" width="100" height="100" /><br/>Cloudinary</p>  | <p align="center"><img src="https://img.stackshare.io/service/11559/zustand.png" width="100" height="100" /><br/>Zustand</p> |
+
+
+
+## 🚀 Quick start
+
+
+### Step 1: Clone the repo
+
+Fork the repository then clone it locally by doing
+
+```sh
+git clone https://github.com/Jenil-Vekaria/groundbnb.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Step 2: Install Dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+npm install
+```
 
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello) is an endpoint that uses [Route Handlers](https://beta.nextjs.org/docs/routing/route-handlers). This endpoint can be edited in `app/api/hello/route.ts`.
+### Step 3: Setup .env
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To run the server, you will need to step up `.env` variables
 
-## Learn More
+1. Create an account on [Cloundary](https://cloudinary.com/) and get your cloud name
+2. Setup Github OAuth - [Guide](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app)
+3. Setup Google OAuth - [Guide](https://support.google.com/cloud/answer/6158849?hl=en)
 
-To learn more about Next.js, take a look at the following resources:
+- create a new file <b>.env</b> in the root
+- open [.env.EXAMPLE](./.env.EXAMPLE)
+- copy the contents and paste it to the .env with valid keys
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Step 4: Run the Application
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+npm run dev
+```
 
-## Deploy on Vercel
+#### You are all setup!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Give a ⭐, if you liked the project
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 📸 Screenshots
+
+
+## Author
+
+- Github: [@Jenil-Vekara](https://github.com/Jenil-Vekaria)
+- Portfolio: [Jenil-Vekaria.netlify.app](https://jenil-vekaria.netlify.app/)
+- LinkedIn: [@JenilVekaria](https://www.linkedin.com/in/jenilvekaria/)
